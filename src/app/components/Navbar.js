@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className="py-6 flex flex-row gap-10">
             <Image src={"https://www.ikea.com/in/en/static/ikea-logo.f7d9229f806b59ec64cb.svg"} height={100} width={100} alt={"logo"}/>
-            <div className="rounded-3xl hidden w-11/12 font-light items-center bg-gray-100 px-4 p-2 gap-4 lg:flex flex-row">
+            <div className="rounded-3xl hidden w-11/12 font-light items-center bg-gray-100 px-4 p-2 gap-4 sm:flex flex-row">
                 <IoMdSearch size={22} />
                 <h1 className="mr-auto">
                     What are you looking for?

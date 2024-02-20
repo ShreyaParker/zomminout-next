@@ -3,7 +3,8 @@ import Image from "next/image";
 import {useDispatch, useSelector} from "react-redux";
 import {SliceOpen} from "@/app/provider/redux/toggleSlice";
 import {AiFillStar} from "react-icons/ai";
-
+import {Carousel} from "react-responsive-carousel";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const ProductInfo = () => {
     const dispatch = useDispatch();
 
@@ -15,7 +16,13 @@ const ProductInfo = () => {
     return (
         <div className="flex  flex-col sm:flex-row   items-center justify-between ">
             <div className=" flex  sm:hidden">
-
+                <Carousel showArrows={true}  >
+                    {
+                        images.map((image, index) => (
+                            <Image key={index} src={image} alt={"Sd"} width={200} height={400}/>
+                        ))
+                    }
+               </Carousel>
             </div>
             <div className="py-6 hidden sm:grid grid-cols-2 w-6/12 gap-3">
                 {images.map((imageUrl, index) => (
@@ -24,7 +31,7 @@ const ProductInfo = () => {
                     </div>
                 ))}
             </div>
-            <div className="p-13 py-28  lg:fixed top-14 right-1/4 ">
+            <div className="p-13 sm:py-28  lg:fixed top-14 right-1/4 ">
                 <h1 className="font-bold">
                     LILL
                 </h1>
