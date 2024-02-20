@@ -5,6 +5,7 @@ import {SliceOpen} from "@/app/provider/redux/toggleSlice";
 import {AiFillStar} from "react-icons/ai";
 import {Carousel} from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ZoomImage from "@/app/components/ZoomImage";
 const ProductInfo = () => {
     const dispatch = useDispatch();
 
@@ -19,7 +20,7 @@ const ProductInfo = () => {
                 <Carousel showArrows={true}  >
                     {
                         images.map((image, index) => (
-                            <Image key={index} src={image} alt={"Sd"} width={200} height={400}/>
+                            <ZoomImage key={index} src={image} alt={"Sd"}/>
                         ))
                     }
                </Carousel>
