@@ -32,34 +32,6 @@ const ProductInfo = () => {
                     </div>
                 ))}
             </div>
-            <div className="p-13 sm:py-28  lg:fixed top-14 right-1/4 ">
-                <h1 className="font-bold">
-                    LILL
-                </h1>
-                <p className="pb-3">
-                    Net curtains, Net curtains, 1 pair, white, <br/> 280x250 cm (110x98 ")
-                </p>
-
-                <span
-                    className="bg-yellow-400 mb-4 border-b-red-700 border-r-4 border-b-4 border-r-red-700 p-2 my-4 text-2xl font-bold">
-                    <span className="text-sm">
-                        Rs
-                    </span> 399
-
-                </span>
-                <h1 className="my-4  text-sm">
-                Price incl of all taxes
-            </h1>
-                <div className="flex flex-row">
-                    <AiFillStar/>
-                    <AiFillStar/>
-                    <AiFillStar/>
-                    <AiFillStar/>
-                    <AiFillStar/>
-                </div>
-
-            </div>
-
 
         </div>
     );

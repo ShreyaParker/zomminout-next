@@ -22,7 +22,7 @@ const ImageSlider = () => {
     const images = useSelector(state => state.toggle.images);
     if (selectedImageIndex === null) return null;
       return (
-          <div className="flex p-5 bg-white flex-col">
+          <div className="flex p-5 pb-10 bg-white flex-col">
               <button
                   className="flex justify-end"
                   onClick={() => {
@@ -44,7 +44,7 @@ const ImageSlider = () => {
                   {images.map((imageUrl, index) => (
                       <SwiperSlide key={index}>
                           <div className="relative z-10">
-                              <div className='z-20 h-11/12 rounded-2xl justify-center flex bg-cover duration-500'>
+                              <div className='z-20 h-11/12 rounded-2xl justify-center flex bg-cover'>
                                   <ZoomImage src={imageUrl} />
                               </div>
                           </div>
