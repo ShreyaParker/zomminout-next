@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      cursor: {
+        'fancy': 'url(hand.cur), pointer',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
