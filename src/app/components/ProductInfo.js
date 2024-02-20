@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import {useDispatch, useSelector} from "react-redux";
 import {SliceOpen} from "@/app/provider/redux/toggleSlice";
-import {AiFillStar} from "react-icons/ai";
+
 import {Carousel} from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ZoomImage from "@/app/components/ZoomImage";
